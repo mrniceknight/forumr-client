@@ -2,10 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './Authentication/LoginContainer';
 import Home from './Home/Home';
-import createState from '../utils/createState';
 
-export default function App() {
-  const isAuth = createState(false);
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -15,3 +13,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+export default App

@@ -4,14 +4,9 @@
         "es6": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "airbnb"
+        "react-app"
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -20,11 +15,11 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "@typescript-eslint"
     ],
     "rules": {
         "linebreak-style": "off",
-        "react/prefer-stateless-function": "off",
-        "react/jsx-filename-extension": "off"
+        "react-hooks/rules-of-hooks": "off"
     }
 }
